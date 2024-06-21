@@ -2,172 +2,165 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register Form</title>
+    <title>Registration page</title>
     <style>
-        body{
-            background: url('./image/download.jpeg');
-            background-size: cover;
-        }
-        input{
-            background: transparent;
-            border: 2px solid rgb(105, 104, 104);
-        }
-        textarea{
-            width: 300px;
-            height: 200px;
-            background: transparent;
-            border: 2px solid rgb(105, 104, 104);
-        }
-        input .radio{
-            background: transparent;
-        }
-        select{
-            background: transparent;
-            border: 2px solid rgb(105, 104, 104);
-        }
-        .but{
-            width: 100px;
-            padding: 10px;
-            border: 2px solid rgb(105, 104, 104);
-            border-radius: 20px;
-        }
-        .mydiv{
-            height: 400px;
-            justify-content: center;
-            display: flex;
-        }
-        form{
-            align-items: center;
-            justify-content: center;
-            display: flex;
-            height: 500px;
-            background: transparent;
-            border: 1px solid black;
-            border-radius: 25px;
-            padding: 20px;
-            width: 500px;
-        }
-    </style>
-</head>
-<body>
-    <center><h1>Registration Form</h1></center>
-    <div class="mydiv">
-        <form>
-            <table>
-                <tr>
-                    <td><label for="name">Name</label></td>
-                    <td>
-                        &nbsp&nbsp&nbsp
-                        <input type="text" name="fname"/>
-                        <br>
-                        &nbsp&nbsp&nbsp
-                        First name
-                    </td>
-                    <td><input type="text" name="lname"/>
-                    <br>Last name
-                    </td>
-                </tr>
-                <tr>
-                    <td><label for="mob">Mobile No.</label></td>
-                    <td>
-                        &nbsp&nbsp&nbsp
-                        <input type="number" name="mob"/>
-                        <br>
-                        &nbsp&nbsp&nbsp
-                        Contact No.
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="3">
-                        Gender
-                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                        <input type="radio" name="gender" value="male"/>Male
-                        <input type="radio" name="gender" value="female"/>Female
-                    </td>
-                </tr>
-                <td><label for="address">Address</label></td>
-                    <td colspan="3">
-                        &nbsp&nbsp&nbsp
-                        <textarea type="text" name="addr"></textarea>
-                    </td>
-                <tr>
-                    <td><label for="state">State</label></td>
-                    <td colspan="3">
-                        &nbsp&nbsp&nbsp 
-                    <select id="country-state" name="country-state">
-                        <option value="">Select state</option>
-                        <option value="AN">Andaman and Nicobar Islands</option>
-                        <option value="AP">Andhra Pradesh</option>
-                        <option value="AR">Arunachal Pradesh</option>
-                        <option value="AS">Assam</option>
-                        <option value="BR">Bihar</option>
-                        <option value="CH">Chandigarh</option>
-                        <option value="CT">Chhattisgarh</option>
-                        <option value="DN">Dadra and Nagar Haveli</option>
-                        <option value="DD">Daman and Diu</option>
-                        <option value="DL">Delhi</option>
-                        <option value="GA">Goa</option>
-                        <option value="GJ">Gujarat</option>
-                        <option value="HR">Haryana</option>
-                        <option value="HP">Himachal Pradesh</option>
-                        <option value="JK">Jammu and Kashmir</option>
-                        <option value="JH">Jharkhand</option>
-                        <option value="KA">Karnataka</option>
-                        <option value="KL">Kerala</option>
-                        <option value="LA">Ladakh</option>
-                        <option value="LD">Lakshadweep</option>
-                        <option value="MP">Madhya Pradesh</option>
-                        <option value="MH">Maharashtra</option>
-                        <option value="MN">Manipur</option>
-                        <option value="ML">Meghalaya</option>
-                        <option value="MZ">Mizoram</option>
-                        <option value="NL">Nagaland</option>
-                        <option value="OR">Odisha</option>
-                        <option value="PY">Puducherry</option>
-                        <option value="PB">Punjab</option>
-                        <option value="RJ">Rajasthan</option>
-                        <option value="SK">Sikkim</option>
-                        <option value="TN">Tamil Nadu</option>
-                        <option value="TG">Telangana</option>
-                        <option value="TR">Tripura</option>
-                        <option value="UP">Uttar Pradesh</option>
-                        <option value="UT">Uttarakhand</option>
-                        <option value="WB">West Bengal</option>
-                    </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="user">Username</label>
-                    </td>
-                    <td colspan="2">
-                        &nbsp&nbsp&nbsp
-                        <input type="text" name="user"/>
-                        <br>
-                        &nbsp&nbsp&nbsp
-                        Username
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="password">Password</label>
-                    </td>
-                    <td colspan="2">
-                        &nbsp&nbsp&nbsp
-                        <input type="password" name="pass"/>
-                        <br>
-                        &nbsp&nbsp&nbsp
-                        Password
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="3">
-                        <center><input class="but" type="submit" value="Register"></center>
-                    </td>
-                </tr>
-            </table>
-        </form>
-    </div>
-</body>
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+            }
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                background: url('./image/download.jpeg') no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+            .container{
+                width: 620px;
+                background: transparent;
+                border: 2px solid black;
+                backdrop-filter: blur(9px);
+                color: black;
+                border-radius: 12px;
+                padding: 30px 40px;
+            }
+            .container h1{
+                font-size: 36px;
+                text-align: center;
+            }
+            .container .input-control{
+                position: relative;
+                width: 100%;
+                height: 30px;
+                margin: 40px 0;
+            }
+            .input-control input{
+                width: 100%;
+                height: 100%;
+                background: transparent;
+                border: none;
+                outline: none;
+                border: 2px solid black;
+                border-radius: 40px;
+                font-size: 16px;
+                color: black;
+                padding: 20px 45px 20px 20px;
+            }
+            .input-control input::placeholder{
+                color: black;
+            }
+            .input-control span {
+                color: red;
+                font-size: 10px;
+                margin-left: 25px;
+                padding: 5px;
+            }
+            .container .btn{
+                width: 40%;
+                height: 45px;
+                background: #fff;
+                border: 2px solid #333;
+                outline: none;
+                border-radius: 40px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+                cursor: pointer;
+                font-size: 16px;
+                color: #333;
+                font-weight: 600;
+            }
+            .btn:hover{
+                background-color: rgb(148, 223, 226);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <form id="form" class="form">
+                <h1>Registration</h1>
+                <div class="input-control">
+                    <input id="name" placeholder="Full Name" name="fname" type="text">
+                    <span id="name_error"></span>
+                </div>
+                <div class="input-control">
+                    <input id="email" placeholder="Email" name="email" type="text">
+                    <span id="email_error"></span>
+                </div>
+                <div class="input-control">
+                    <input id="mob" placeholder="Mobile Number" name="phone" type="number">
+                    <span id="mob_error"></span>
+                </div>
+                <div class="input-control">
+                    <input type="text" placeholder="Address" id="add" name="address">
+                    <span id="add_error"></span>
+                </div>
+                <div class="input-control">
+                    <input id="password" placeholder="Create Password" name="password" type="password">
+                    <span id="pass_error"></span>
+                </div>
+                <div class="input-control">
+                    <input id="password2" placeholder="Confirm Password" name="password2" type="password">
+                    <span id="cpass_error"></span>
+                </div>
+                <center><button type="submit" class="btn">Register</button></center>
+            </form>
+        </div>
+        <script>
+            const name = document.getElementById("name");
+            const email = document.getElementById("email");
+            const mob = document.getElementById("mob");
+            const add = document.getElementById("add");
+            const password = document.getElementById("password");
+            const password2 = document.getElementById("password2");
+            const form = document.getElementById("form");
+            const name_error = document.getElementById("name_error");
+            const email_error = document.getElementById("email_error");
+            const mob_error = document.getElementById("mob_error");
+            const add_error = document.getElementById("add_error")
+            const pass_error = document.getElementById("pass_error");
+            const cpass_error = document.getElementById("cpass_error");
+
+            form.addEventListener('submit',e =>{
+                if(name.value === '' || name.value == null)
+                {
+                    e.preventDefault();
+                    name_error.innerHTML = "Name is required";
+                }
+                var email_check = /^[a-zA-Z0-9+*%#@]+@[a-zA-Z]+\.[a-zA-Z]{2,}$/;
+                if(!email.value.match(email_check))
+                {
+                    e.preventDefault();
+                    email_error.innerHTML = "Valid email is required";
+                }
+                var mob_check = /^([0-9]+){10}$/;
+                if(!mob.value.match(mob_check))
+                {
+                    e.preventDefault();
+                    mob_error.innerHTML = "Ten-digit number is required";
+                }
+                if(add.value === '' || add.value == null)
+                {
+                    e.preventDefault();
+                    add_error.innerHTML = "Address is required";
+                }
+                var pass_check = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@.#$!%*?&^])[A-Za-z\d@.#$!%*?&]{8,15}$/;
+                if(!password.value.match(pass_check))
+                {
+                    e.preventDefault();
+                    pass_error.innerHTML = "Create a valid password";
+                }
+                var cpass_check = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@.#$!%*?&^])[A-Za-z\d@.#$!%*?&]{8,15}$/;
+                if(!password2.value.match(cpass_check))
+                {
+                    e.preventDefault();
+                    cpass_error.innerHTML = "Please confirm a valid password";
+                }
+            });
+        </script>
+    </body>    
 </html>
